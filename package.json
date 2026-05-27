@@ -1,0 +1,50 @@
+{
+  "name": "scissor",
+  "version": "1.0.0",
+  "description": "Fast, minimal URL shortener with analytics and QR codes",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:convex\" \"npm run dev:frontend\"",
+    "dev:frontend": "vite",
+    "dev:convex": "convex dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "convex": "^1.14.1",
+    "clerk": "^4.0.0",
+    "@clerk/convex": "^1.0.0",
+    "@convex-dev/react": "^1.0.0",
+    "nanoid": "^5.0.4",
+    "qrcode.react": "^1.0.1",
+    "recharts": "^2.12.0",
+    "axios": "^1.6.5",
+    "react-hot-toast": "^2.4.1",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.32"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8",
+    "typescript": "^5.3.3",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/node": "^20.10.6",
+    "vitest": "^1.1.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@playwright/test": "^1.40.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "convex-test": "^1.0.0",
+    "concurrently": "^8.2.2"
+  }
+}
